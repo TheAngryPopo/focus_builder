@@ -1,0 +1,59 @@
+focus_tree = {
+    # PLEASE CHANGE #
+    id = focus_tree_id
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = LUX
+        }
+    }
+
+    default = no
+
+    focus = {
+        id = yo_mama
+        icon = GFX_
+        
+        x = 0
+        y = 1
+        
+        cost = 10
+
+        #relative_position_id =  
+        prerequisite = {}
+        
+        completion_reward = {
+
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+
+    focus = {
+        id = joe
+        icon = GFX_
+        
+        x = 0
+        y = 1
+        
+        cost = 7
+
+        relative_position_id = yo_mama 
+        prerequisite = { focus = yo_mama }
+        
+        completion_reward = {
+
+        }
+        
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    
+}
