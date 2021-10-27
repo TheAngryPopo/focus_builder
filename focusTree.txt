@@ -14,7 +14,7 @@ focus_tree = {
     default = no
 
     focus = {
-        id = yo_mama
+        id = LUX_make_investments
         icon = GFX_
         
         x = 0
@@ -26,34 +26,144 @@ focus_tree = {
         prerequisite = {}
         
         completion_reward = {
-
+            
         }
-        
+
+        search_filters = {}
         ai_will_do = {
             factor = 10
         }
     }
-    
 
     focus = {
-        id = joe
+        id = LUX_capitalists_take_control
         icon = GFX_
         
         x = 0
         y = 1
         
-        cost = 7
+        cost = 10
 
-        relative_position_id = yo_mama 
-        prerequisite = { focus = yo_mama }
+        #relative_position_id = LUX_make_investments 
+        prerequisite = { focus = LUX_make_investments }
         
         completion_reward = {
-
+            
         }
-        
+
+        search_filters = {}
         ai_will_do = {
             factor = 10
         }
     }
-    
+
+    focus = {
+        id = LUX_capitalists_buy_government
+        icon = GFX_
+        
+        x = 0
+        y = 1
+        
+        cost = 10
+
+        #relative_position_id = LUX_make_investments 
+        prerequisite = { focus = LUX_make_investments }
+        
+        completion_reward = {
+            
+        }
+
+        search_filters = {}
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = LUX_raise_taxes
+        icon = GFX_
+        
+        x = 0
+        y = 1
+        
+        cost = 10
+
+        #relative_position_id =  
+        prerequisite = {}
+        
+        completion_reward = {
+            
+        }
+
+        search_filters = {}
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = LUX_take_out_loan
+        icon = GFX_
+        
+        x = 0
+        y = 1
+        
+        cost = 10
+
+        #relative_position_id = LUX_raise_taxes 
+        prerequisite = { focus = LUX_raise_taxes }
+        
+        completion_reward = {
+            
+        }
+
+        search_filters = {}
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = LUX_larger_loan
+        icon = GFX_
+        
+        x = 0
+        y = 1
+        
+        cost = 10
+
+        #relative_position_id = LUX_take_out_loan 
+        prerequisite = { focus = LUX_take_out_loan }
+        
+        completion_reward = {
+            
+        }
+
+        search_filters = {}
+        ai_will_do = {
+            factor = 10
+        }
+    }
+
+    focus = {
+        id = LUX_ultimate_loan
+        icon = GFX_
+        
+        x = 0
+        y = 1
+        
+        cost = 10
+
+        #relative_position_id = LUX_larger_loan 
+        prerequisite = { focus = LUX_larger_loan }
+        
+        completion_reward = {
+            
+        }
+
+        search_filters = {}
+        ai_will_do = {
+            factor = 10
+        }
+    }
 }
